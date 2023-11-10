@@ -1,0 +1,12 @@
+{
+    "name": "oleshek/design_patterns",
+    "description": "Code from Head First Design Patterns book, written in PHP",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require": {}
+}
