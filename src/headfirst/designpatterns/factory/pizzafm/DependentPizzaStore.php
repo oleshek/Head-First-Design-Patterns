@@ -14,7 +14,7 @@ use App\headfirst\designpatterns\factory\pizzafm\pizzaTypes\Pizza;
 
 class DependentPizzaStore
 {
-    public function createPizza(string $style, string $type): ?Pizza
+    public function orderPizza(string $style, string $type): ?Pizza
     {
         $pizza = null;
 

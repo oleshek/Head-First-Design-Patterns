@@ -10,21 +10,21 @@ use App\headfirst\designpatterns\factory\pizzaaf\pizzaTypes\VeggiePizza;
 
 class NYPizzaStore extends PizzaStore
 {
-    protected function createPizza(string $item): ?Pizza
+    protected function createPizza(string $type): ?Pizza
     {
         $pizza = null;
         $ingredientFactory = new NYPizzaIngredientFactory();
 
-        if ($item == 'cheese') {
+        if ($type == 'cheese') {
             $pizza = new CheesePizza($ingredientFactory);
             $pizza->setName('New York Style Cheese Pizza');
-        } elseif ($item == 'veggie') {
+        } elseif ($type == 'veggie') {
             $pizza = new VeggiePizza($ingredientFactory);
             $pizza->setName('New York Style Veggie Pizza');
-        } elseif ($item == 'clam') {
+        } elseif ($type == 'clam') {
             $pizza = new ClamPizza($ingredientFactory);
             $pizza->setName('New York Style Clam Pizza');
-        } elseif ($item == 'pepperoni') {
+        } elseif ($type == 'pepperoni') {
             $pizza = new PepperoniPizza($ingredientFactory);
             $pizza->setName('New York Style Pepperoni Pizza');
         }

@@ -6,7 +6,7 @@ use App\headfirst\designpatterns\factory\pizzafm\pizzaTypes\Pizza;
 
 abstract class PizzaStore
 {
-    abstract function createPizza(string $item): ?Pizza;
+    abstract function createPizza(string $type): ?Pizza;
 
     public function orderPizza(string $type): Pizza
     {
