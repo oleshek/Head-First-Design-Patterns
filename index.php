@@ -1,5 +1,8 @@
 <?php
 
+use App\headfirst\designpatterns\decorator\pizza\PizzaStore;
+use App\headfirst\designpatterns\decorator\starbuzz\StarbuzzCoffee;
+use App\headfirst\designpatterns\decorator\starbuzzWithSizes\StarbuzzCoffee as StarbuzzCoffeeWithSizes;
 use App\headfirst\designpatterns\factory\pizzas\PizzaTestDrive as PizzaSTestDrive;
 use App\headfirst\designpatterns\factory\pizzafm\PizzaTestDrive as PizzaFMTestDrive;
 use App\headfirst\designpatterns\factory\pizzaaf\PizzaTestDrive as PizzaAFTestDrive;
@@ -23,9 +26,13 @@ require './vendor/autoload.php';
 // MiniDuckSimulator::main();
 // MiniDuckSimulator1::main();
 
-Simple::main();
+// Simple::main();
 // SimpleObservable::main();
 // WeatherStation::main();
 // WeatherStationHeatIndex::main();
 // ObservableWeatherStation::main();
 // ObservableWeatherStationHeatIndex::main();
+
+// PizzaStore::main();
+// StarbuzzCoffee::main();
+StarbuzzCoffeeWithSizes::main();
