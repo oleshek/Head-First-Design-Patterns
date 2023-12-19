@@ -12,6 +12,9 @@ use App\headfirst\designpatterns\observer\weather\WeatherStation;
 use App\headfirst\designpatterns\observer\weather\WeatherStationHeatIndex;
 use App\headfirst\designpatterns\observer\weatherobservable\WeatherStation as ObservableWeatherStation;
 use App\headfirst\designpatterns\observer\weatherobservable\WeatherStationHeatIndex as ObservableWeatherStationHeatIndex;
+use App\headfirst\designpatterns\singleton\chocolate\ChocolateController;
+use App\headfirst\designpatterns\singleton\classic\SingletonClient as ClassicSingletonClient;
+use App\headfirst\designpatterns\singleton\enumS\SingletonClient as EnumSSingletonClient;
 use App\headfirst\designpatterns\strategy\AnimalTest;
 use App\headfirst\designpatterns\strategy\MiniDuckSimulator;
 use App\headfirst\designpatterns\strategy\MiniDuckSimulator1;
@@ -35,4 +38,8 @@ require './vendor/autoload.php';
 
 // PizzaStore::main();
 // StarbuzzCoffee::main();
-StarbuzzCoffeeWithSizes::main();
+// StarbuzzCoffeeWithSizes::main();
+
+// ChocolateController::main();
+// ClassicSingletonClient::main();
+EnumSSingletonClient::main();
