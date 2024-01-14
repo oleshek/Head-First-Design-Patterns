@@ -1,5 +1,10 @@
 <?php
 
+use App\headfirst\designpatterns\command\diner\Diner;
+use App\headfirst\designpatterns\command\party\RemoteLoader as PartyRemoteLoader;
+use App\headfirst\designpatterns\command\remote\RemoteLoader;
+use App\headfirst\designpatterns\command\simpleremote\RemoteControlTest as SimpleRemote;
+use App\headfirst\designpatterns\command\undo\RemoteLoader as RemoteLoaderWithUndo;
 use App\headfirst\designpatterns\decorator\pizza\PizzaStore;
 use App\headfirst\designpatterns\decorator\starbuzz\StarbuzzCoffee;
 use App\headfirst\designpatterns\decorator\starbuzzWithSizes\StarbuzzCoffee as StarbuzzCoffeeWithSizes;
@@ -42,4 +47,10 @@ require './vendor/autoload.php';
 
 // ChocolateController::main();
 // ClassicSingletonClient::main();
-EnumSSingletonClient::main();
+// EnumSSingletonClient::main();
+
+// Diner::main();
+// SimpleRemote::main();
+// RemoteLoader::main();
+// RemoteLoaderWithUndo::main();
+PartyRemoteLoader::main();
