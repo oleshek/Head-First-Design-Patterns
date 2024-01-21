@@ -1,5 +1,7 @@
 <?php
 
+use App\headfirst\designpatterns\adapter\ducks\DuckTestDrive;
+use App\headfirst\designpatterns\adapter\ducks\TurkeyTestDrive;
 use App\headfirst\designpatterns\command\diner\Diner;
 use App\headfirst\designpatterns\command\party\RemoteLoader as PartyRemoteLoader;
 use App\headfirst\designpatterns\command\remote\RemoteLoader;
@@ -53,4 +55,7 @@ require './vendor/autoload.php';
 // SimpleRemote::main();
 // RemoteLoader::main();
 // RemoteLoaderWithUndo::main();
-PartyRemoteLoader::main();
+// PartyRemoteLoader::main();
+
+// DuckTestDrive::main();
+TurkeyTestDrive::main();
