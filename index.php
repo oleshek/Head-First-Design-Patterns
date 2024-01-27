@@ -10,6 +10,7 @@ use App\headfirst\designpatterns\command\undo\RemoteLoader as RemoteLoaderWithUn
 use App\headfirst\designpatterns\decorator\pizza\PizzaStore;
 use App\headfirst\designpatterns\decorator\starbuzz\StarbuzzCoffee;
 use App\headfirst\designpatterns\decorator\starbuzzWithSizes\StarbuzzCoffee as StarbuzzCoffeeWithSizes;
+use App\headfirst\designpatterns\facade\hometheater\HomeTheaterTestDrive;
 use App\headfirst\designpatterns\factory\pizzas\PizzaTestDrive as PizzaSTestDrive;
 use App\headfirst\designpatterns\factory\pizzafm\PizzaTestDrive as PizzaFMTestDrive;
 use App\headfirst\designpatterns\factory\pizzaaf\PizzaTestDrive as PizzaAFTestDrive;
@@ -58,4 +59,6 @@ require './vendor/autoload.php';
 // PartyRemoteLoader::main();
 
 // DuckTestDrive::main();
-TurkeyTestDrive::main();
+// TurkeyTestDrive::main();
+
+HomeTheaterTestDrive::main();
